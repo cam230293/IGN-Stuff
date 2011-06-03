@@ -27,6 +27,33 @@ At Move 3 the knight would move forward another 2 squares leaving it on the 7th 
 Move 4 would be the final move in which the knight moves across 3 squares and forward 1 as it can no longer move forward by one move
 
 Didn't add a graph, because this is my first time using GitHub and I'm struggling a bit
+Also I am just going to dump the code for the program in here because I can not get it to upload, sorry
+
+#Written for python programming language
+# Craig Martin
+# 3/06/2011
+# Chess Board Problem
+# Knights move forward in L shapes of 3 by 1, however we are only considering forward movement
+
+
+Squaresleft = 7 # presuming the knight starts on the first square of the board
+Movesmade = 0
+ForwardL = 2 #number of squares the knight moves forward when the main part of the L moves forward
+SideL = 1 #number of squares the knight moves forward when the main part of the L is to the side
+
+while Squaresleft != 0:
+    if Squaresleft > ForwardL:
+        print "Moved forward 2, across by 1"
+        Squaresleft = Squaresleft - ForwardL
+    else:
+        Squaresleft = Squaresleft - SideL
+        print "Moved forward 1, across by 2"
+    print "There is", Squaresleft, "squares left to move untill the end of the board"
+    Movesmade = Movesmade +1
+
+print ""
+print "You have made",Movesmade,"moves"
+
 
 4)
 I was struggling to be creative, and show my fire
